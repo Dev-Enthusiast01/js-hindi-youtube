@@ -9,20 +9,26 @@ console.log(3
 console.log("Suraj")
 
 
-let name = "Suraj"
-let age = 18
-let isLoggedIn = false
-let state = null
+let name = "Suraj" //called "string" 
+let age = 18  //number
+let isLoggedIn = false //boolean
+let state = null // its also a object
 
+     //----DATATYPES---//
+
+         //Primitive//
 
 // number => 2 to power 53
 // bigint 
-// string =>
+// string => " "
 // boolean => true/false
 // null => standalone value
 // underfined =>
 // symbol => unique
 
+     
+        //Non-Primitive//
+        
 // object
 
 console.log(typeof undefined)
