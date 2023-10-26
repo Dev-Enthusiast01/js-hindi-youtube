@@ -41,6 +41,7 @@ console.log(typeof myFunction);
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Stack (Primitive), Heap (Non-Primitive)
+// stacks mein copy milta hai. Heap mein real reference milta hai
 
 let myYoutubename= "Suraj"
 
@@ -49,3 +50,15 @@ anothername = "Suuiii"
 
 console.log(myYoutubename);
 console.log(anothername);
+
+let userOne ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "suraj@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
