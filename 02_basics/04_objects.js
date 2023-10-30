@@ -62,15 +62,51 @@ users[1].email
 
 // 7.keys-means obj ke ke element print karwane ke liye
 // Note :- Output Array ki form mein aata hai "[]"
-console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 
 // 8.values-means obj ke ke element ki value print karwane ke liye
 // Note :- Output Array ki form mein aata hai "[]".
-console.log(Object.values(tinderUser));
+// console.log(Object.values(tinderUser));
 
 // 9. entries - har ek key-value ko array mein separate kar diya jaata hai
 // like [ [ 'id', '123abc' ], [ 'name', 'Sammy' ] ].
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-// 10. to check wheather a obj property exist or not ?.
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// 10.hasOwnProperty used to check wheather a obj property exist or not ?.
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+//------------- Object destructuring ---------------
+
+const course = {
+     coursename: "js in hindi",
+     price: "999",
+     courseInstructor: "hitesh"
+}
+// 1. This method is good. but handy if we want to print nested element mulitples times.
+// course.courseInstructor
+
+// 1.1 Instead we can use like this to retain the nested value.
+// we can also replace name. i.e.- teacher
+const {courseInstructor: teacher} = course
+
+// console.log(courseInstructor);
+console.log(teacher);
+
+
+// -------------JSON API--------------
+// {
+//     "name": "suraj",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
+
+
+
