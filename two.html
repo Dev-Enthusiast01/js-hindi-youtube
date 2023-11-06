@@ -7,16 +7,39 @@
 </head>
 <body style="background-color: #212121 ; color: #fff; ">
     <div class="parent">
+        <!-- This is a comment -->
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
     </div>
 </body>
-<script>
-    document.querySelector('.parent')
-    console.log(parent);
-    console.log(parent.children);
+<script> 
+     const parent = document.querySelector('.parent')
+    //  console.log(parent);
+    //  console.log(parent.children);
+    //  console.log(parent.children[1].innerHTML);
 
- </script>
+
+    //  for (let i = 0; i < parent.children.length; i++) {
+    //       console.log(parent.children[i].innerHTML);
+        
+    //  }
+
+    parent.children[1].style.color = "orange"
+    // Target 1st Child
+    // console.log(parent.firstElementChild);
+    // Target last Child
+    // console.log(parent.lastElementChild);
+
+
+    //will show monday as qselector target day. qs target 1st element
+    const dayOne = document.querySelector(".day")
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes);
+
+</script>
 </html>
